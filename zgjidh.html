@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh; 
+      background-color: black;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Dancing Script', sans-serif;
+      font-size: 300%;
+    }
+
+    .image-container {
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-around; 
+      align-items: flex-start; 
+      width: 80%;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .image-container img:hover {
+  border: 2px solid white; 
+}
+
+.button:hover {
+  background-color: #7882ea; 
+}
+
+
+    .image-container p {
+      font-size: 150%;
+      font-family: 'Dancing Script', sans-serif;
+      text-align: center;
+    }
+
+    .image-container .description {
+      font-size: 100%;
+      font-family: 'Montserrat', sans-serif;
+      max-width: 250px;
+      text-align: center;
+      color: lightgray; 
+    }
+
+    .image-container .cmimi {
+      font-size: 120%;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      color: gold; 
+    }
+
+    
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333; 
+      color: white; 
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #7882ea; 
+    }
+
+
+    .button {
+      margin-bottom: 200px;
+    }
+  </style>
+
+
+  <title>Me shume zgjedhje</title>
+</head>
+<body>
+  <h1>Me shume zgjedhje</h1>
+
+  <div class="image-container">
+    <div>
+      <img src="assets/img/shiko 1.jpg" alt="Image 1">
+      <p>La Venue Set</p>
+      <p class="description">Ngritni stilin tuaj me setin tonë La Venue. 
+        Ky set përmban një gjerdan mahnitës diamanti, 
+        një palë vathë që përputhen dhe një byzylyk. I punuar me saktësi dhe i zbukuruar me 
+        diamante brilante, ky set kullon sofistikim dhe 
+        hijeshi, duke e bërë atë të përsosur për raste 
+        të veçanta dhe ngjarje zyrtare.
+    </p>
+    <p class="cmimi">€40 000</p>
+    </div>
+
+    <div>
+      <img src="assets/img/shiko 2.jpg" alt="Image 2">
+      <p>Spring Set</p>
+      <p class="description">Hyni në joshjen e epokave të shkuara me setin 
+        tonë Spring. Ky koleksion magjepsës 
+        shfaq dizajne të ndërlikuara të frymëzuara nga estetika 
+        vintage. Gjerdani, vathët dhe unaza janë zbukuruar me
+         diamante të ndezur, duke kapur thelbin e hijeshisë së 
+         botës së vjetër. Komplimentet nuk do të mungojnë askund</p>
+         <p class="cmimi">€50 000</p>
+    </div>
+
+    <div>
+      <img src="assets/img/shiko 3.jpg" alt="Image 3">
+      <p>Paris Set</p>
+      <p class="description">Përqafoni elegancën bashkëkohore me setin tonë 
+        modern elegant me diamante. I projektuar për vajzat 
+        e modës, ky set përmban linja të hijshme, forma 
+        gjeometrike dhe një estetikë minimaliste. 
+        Gjerdani me varëse, vathët dhe byzylyku 
+        ​​shfaqin shkëlqimin e diamanteve në një ambient modern.</p>
+        <p class="cmimi">€40 000</p>
+    </div>
+
+    <div>
+      <img src="assets/img/shiko 4.jpg" alt="Image 4">
+      <p>Florence Set</p>
+      <p class="description">Kënaquni me shkëlqimin e setit tonë Florence. 
+        I përshtatshëm për një mbretëreshë, ky koleksion 
+        mbretëror mburret me një diademë madhështore diamanti, një gjerdan 
+        të thjeshtë dhe një palë vathë. 
+        Detajet e ndërlikuara ngjallin një ndjenjë mbretërie dhe luksi.</p>
+    <p class="cmimi">€30 000</p>
+    </div>
+  </div>
+
+<a href="index.html" class="button">Kthehu te faqja kryesore</a>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all elements with class "cmimi"
+    var cmimiElements = document.querySelectorAll('.cmimi');
+
+    // Add click event listener to each element
+    cmimiElements.forEach(function(element) {
+      element.addEventListener('click', function() {
+        // Display an alert message when clicked
+        alert('Ju duhet te rezervoni nje takim per te kryer kete blerje.');
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>
